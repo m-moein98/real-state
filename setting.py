@@ -7,12 +7,7 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 # DB Setting
-host = "localhost"
-collection_name = "Ireen"
-db_name = "Ireen-db"
-username = "root"
-password = "KjbkERFQTYrlcLyyE7ygYiau"
-client = MongoClient("arthur.iran.liara.ir", 32526, username=username, password=password)
+client = MongoClient("127.0.0.1", 27017)
 db = client.Ireen
 link_collection = db.Listing
 user_collection = db.User
